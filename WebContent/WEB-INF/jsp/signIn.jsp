@@ -28,6 +28,9 @@
 							<input type="password" name="password"  placeholder=" 例）pass+!-1" id="formPass">
 							<p class="errorMsg"></p>
 							<button type="submit" id="signInBtn">Sign In</button>
+							<div class="linkToOtherPage">
+								<a href="/docoTsubu/Login" class="linkTag">ログインページ＞＞</a>
+							</div>
 						</form>
 					</div>
 				</div>

@@ -56,6 +56,7 @@ window.onload = function(){
 			var flagTotal = btnFlag1 + btnFlag2 + btnFlag3;
 			if(flagTotal == 0){
 				signInBtn.disabled = false;
+				signInBtn.style.backgroundColor = "#00BFFF";
 			}
 		}
 	}

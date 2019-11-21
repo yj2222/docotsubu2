@@ -19,11 +19,11 @@
 }
 
 .inner{
-    background-color: rgba(0,0,0,0.1);
-    width: 500px;
+  background-color: rgba(0,0,0,0.1);
+  width: 500px;
 	height: 400px;
 	margin: 0 auto;
-    text-align: center;
+  text-align: center;
 }
 
 .title{
@@ -58,9 +58,46 @@ button{
 	height: 40px;
 	margin-top: 20px;
 	border-radius: 20px;
-	background-color: #00BFFF;
+	background-color: gray;
 	color: white;
 	font-size: 25px;
 	font-weight: bold;
 	font-family: serif;
 }
+
+.linkToOtherPage{
+	text-align: center;
+	padding-top:10px;
+}
+
+.linkTag {
+   position: relative;
+   display: inline-block;
+   text-decoration: none;
+   color: white;
+}
+
+.linkTag:hover{
+	transition: .3s;
+	color: #00BFFF;
+}
+
+.linkTag::after {
+  position: absolute;
+  bottom: 2px;
+  left: 0;
+  content: '';
+  width: 100%;
+  height: 2px;
+  background: #00BFFF;
+  opacity: 0;
+  visibility: hidden;
+  transition: .3s;
+}
+
+.linkTag:hover::after {
+  bottom: -4px;
+  opacity: 1;
+  visibility: visible;
+}
+
