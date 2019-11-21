@@ -10,7 +10,6 @@
 		<title>どこつぶ改！！！</title>
 	</head>
 	<body>
-
 		<div class="background-image"
 		 style="background-image: url(${pageContext.request.contextPath}/image/signIn.jpg);
 		  background-size: cover">
@@ -21,14 +20,14 @@
 						<form action="/docoTsubu2/SignInServlet" method="post" id="form">
 							<p>・ニックネーム:<span style="font-size:12px;">(半角英数字4~8字,記号不可)</span></p>
 							<input type="text" name="nickName" placeholder=" 例）user1234" id="formNickName">
-							<p id="errorMsg"></p>
+							<p class="errorMsg"></p>
 							<p>・メールアドレス:</p>
 							<input type="email" name="email" placeholder=" 例）test1@ex.com" id="formEmail">
-							<p id="errorMsg"></p>
+							<p class="errorMsg"></p>
 							<p>・パスワード:<span	 style="font-size:12px;">(<strong style="color:pink;">記号</strong>,半角英数字を含む4~8字)</span></p>
 							<input type="password" name="password"  placeholder=" 例）pass+!-1" id="formPass">
-							<p id="errorMsg"></p>
-							<button type="submit">Sign In</button>
+							<p class="errorMsg"></p>
+							<button type="submit" id="signInBtn">Sign In</button>
 						</form>
 					</div>
 				</div>
