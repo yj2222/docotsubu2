@@ -29,7 +29,8 @@
 							<p class="errorMsg"></p>
 							<button type="submit" id="signInBtn">Sign In</button>
 							<div class="linkToOtherPage">
-								<a href="/docoTsubu/Login" class="linkTag">ログインページ＞＞</a>
+								<p class="linkText">アカウントお持ちの方は↓↓↓</p>
+								<a href="/docoTsubu2/LoginServlet" class="linkTag">ログインページ＞＞</a>
 							</div>
 						</form>
 					</div>

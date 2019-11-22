@@ -109,20 +109,20 @@ function putErorrMsg(num){
 	var erorrMsg;
 	switch(num) {
 		case 0:
-	    	erorrMsg = "";
-	        break;
-	    case 2:
-	    	erorrMsg = "※使えない文字が含まれています。";
-	        break;
-	    case 3:
-	    	erorrMsg = "※条件を満たしていません。";
-	        break;
-	    case 4:
-	    	erorrMsg = "※入力してください。";
-	        break;
-	    case 5:
-	    	erorrMsg = "※入力が長すぎるか、短すぎます。";
-	        break;
+    	erorrMsg = "";
+        break;
+    case 2:
+    	erorrMsg = "※使えない文字が含まれています。";
+        break;
+    case 3:
+    	erorrMsg = "※条件を満たしていません。";
+        break;
+    case 4:
+    	erorrMsg = "※入力してください。";
+        break;
+    case 5:
+    	erorrMsg = "※入力が長すぎるか、短すぎます。";
+        break;
 	}
 	return erorrMsg;
 }
