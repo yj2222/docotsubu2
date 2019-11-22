@@ -28,9 +28,11 @@ public class LoginServlet extends HttpServlet {
 
 		User user = new User(nickName, password);
 		CheckUserLogic checkUser = new CheckUserLogic();
+		User findedUser = checkUser.execute(user);
 
-		if (checkUser.execute(user) != null) {
-			RequestDispatcher dispatcher = request.getRequestDispatcher("/WEB-INF/jsp/signInOK.jsp");
+		if (findedUser != null) {
+			request.setAttribute("findedUser", findedUser);
+			RequestDispatcher dispatcher = request.getRequestDispatcher("/WEB-INF/jsp/mainPage.jsp");
 			dispatcher.forward(request, response);
 		} else {
 			request.setAttribute("user", user);

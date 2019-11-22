@@ -1,0 +1,46 @@
+@charset "UTF-8";
+
+.mainTop{
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  font-family: serif;
+  padding: 20px 10px 0;
+}
+
+.mainTop__left{
+}
+
+.mainTop__left__title{
+  font-size: 30px;
+}
+
+.mainTop__right{
+}
+
+.mainTop__right__text{
+}
+
+.mainTop__right__textUp{
+}
+
+.mainTop__right__textLow{
+}
+
+.mainTop__right__textLow__strong{
+  font-weight: bold;
+  padding-left: 20px;
+}
+
+.mainTopImg{
+	height: 200px;
+	background-color: black;
+	text-align: center;
+}
+
+.mainTopImg__item{
+	width: 80%;
+	height: 100%;
+	background-size: cover;
+	margin: 0 auto;
+}
