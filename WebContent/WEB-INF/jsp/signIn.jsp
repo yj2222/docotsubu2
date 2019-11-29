@@ -30,7 +30,7 @@
 							<button type="submit" id="signInBtn">Sign In</button>
 							<div class="linkToOtherPage">
 								<p class="linkText">アカウントお持ちの方は↓↓↓</p>
-								<a href="/docoTsubu2/LoginServlet" class="linkTag">ログインページ＞＞</a>
+								<a href="./LoginServlet" class="linkTag">ログインページ＞＞</a>
 							</div>
 						</form>
 					</div>

@@ -27,7 +27,7 @@
 							<button type="submit" style="background-color: #00BFFF;">Login</button>
 							<div class="linkToOtherPage">
 								<p class="linkText">アカウントお持でない方は↓↓↓</p>
-								<a href="/docoTsubu2/SignInServlet" class="linkTag">サインインページへ＞＞</a>
+								<a href="./SignInServlet" class="linkTag">サインインページへ＞＞</a>
 							</div>
 						</form>
 					</div>
