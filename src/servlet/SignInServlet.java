@@ -28,9 +28,9 @@ public class SignInServlet extends HttpServlet {
 		String password = request.getParameter("password");
 		// JavaBeanz呼び出し。ユーザ情報をセット。
 		User user = new User(nickName, email, password);
-		// DB保存のインスタンス
+		// DB保存のインスタンス生成
 		PostUserLogic postUserLogic = new PostUserLogic();
-		//
+		// 新規作成のmodel実行
 		if (postUserLogic.execute(user)) {
 		RequestDispatcher dispatcher = request.getRequestDispatcher("/WEB-INF/jsp/signInOK.jsp");
 		dispatcher.forward(request, response);
