@@ -8,10 +8,17 @@ import java.sql.SQLException;
 
 import model.User;
 
-public class UserDAO {
-	private final String JDBC_URL = "jdbc:h2:tcp://localhost/~/docoTsubu2";
-	private final String DB_USER = "sa";
-	private final String DB_PASS = "";
+public class UserDAO_Production {
+
+	private static Connection getConnection() throws URISyntaxException, SQLException {
+    URI dbUri = new URI(System.getenv("DATABASE_URL"));
+
+    String username = dbUri.getUserInfo().split(":")[0];
+    String password = dbUri.getUserInfo().split(":")[1];
+		String dbUrl = "jdbc:postgresql://" + dbUri.getHost() + ':' + dbUri.getPort() + dbUri.getPath();
+		
+    return DriverManager.getConnection(dbUrl, username, password);
+	}
 
 	public boolean create(User user) {
 		try {
