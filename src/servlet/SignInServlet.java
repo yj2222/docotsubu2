@@ -32,7 +32,7 @@ public class SignInServlet extends HttpServlet {
 		PostUserLogic postUserLogic = new PostUserLogic();
 		// 新規作成のmodel実行
 		if (postUserLogic.execute(user)) {
-		RequestDispatcher dispatcher = request.getRequestDispatcher("/WEB-INF/jsp/signInOK.jsp");
+		RequestDispatcher dispatcher = request.getRequestDispatcher("/WEB-INF/jsp/mainPage.jsp");
 		dispatcher.forward(request, response);
 		} else {
 		RequestDispatcher dispatcher = request.getRequestDispatcher("/WEB-INF/jsp/signIn.jsp");
