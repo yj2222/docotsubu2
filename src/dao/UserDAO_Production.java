@@ -48,7 +48,7 @@ public class UserDAO_Production {
 
 		try {
 			Class.forName ("com.mysql.cj.jdbc.Driver");
-		// データベースへ接続
+			// データベースへ接続
 			try(Connection conn = getConnection()) {
 				// SELECT文を準備
 				String sql = "SELECT * FROM account WHERE nickname = ? AND password = ?";

@@ -22,5 +22,6 @@
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
+	<classpathentry kind="lib" path="C:/pleiades-4.7.3-java-win-64bit-jre_20180411/pleiades/tomcat/8/lib/mysql-connector-java-8.0.18.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>
