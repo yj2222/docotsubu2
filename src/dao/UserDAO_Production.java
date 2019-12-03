@@ -28,7 +28,7 @@ public class UserDAO_Production {
 			Class.forName ("com.mysql.cj.jdbc.Driver");
 			// データベースへ接続
 			try(Connection conn = getConnection()) {
-				String sql = "INSERT INTO USER (NICKNAME, EMAIL, PASSWORD) VALUES(?, ?, ?)";
+				String sql = "INSERT INTO account (NICKNAME, EMAIL, PASSWORD) VALUES(?, ?, ?)";
 				PreparedStatement pStmt = conn.prepareStatement(sql);
 				pStmt.setString(1, user.getNickName());
 				pStmt.setString(2, user.getEmail());
