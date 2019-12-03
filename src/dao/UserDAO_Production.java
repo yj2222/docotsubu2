@@ -48,7 +48,7 @@ public class UserDAO_Production {
 		// データベースへ接続
 		try(Connection conn = getConnection()) {
 			// SELECT文を準備
-			String sql = "SELECT * FROM user WHERE nickname = ? AND password = ?";
+			String sql = "SELECT * FROM account WHERE nickname = ? AND password = ?";
 			PreparedStatement pStmt = conn.prepareStatement(sql);
 			pStmt.setString(1, user.getNickName());
 			pStmt.setString(2, user.getPassword());
@@ -72,6 +72,6 @@ public class UserDAO_Production {
 		}
 		return findedUser;
 	}
-	
+
 }
 
