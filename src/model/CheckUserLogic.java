@@ -7,7 +7,9 @@ public class CheckUserLogic {
 //    UserDAO dao = new UserDAO();
 //    return dao.findUser(user);
 //	}
-	public User executeProduction(User user) {
+
+	// Production環境用DAO呼び出し。
+	public User execute(User user) {
     UserDAO_Production daoProduction = new UserDAO_Production();
     return daoProduction.findUser(user);
 	}
