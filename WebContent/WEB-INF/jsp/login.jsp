@@ -17,7 +17,7 @@
 					<div class="inner">
 						<h3 class="title">Login</h3>
 						<p class="errorMsg"></p>
-						<form action="" method="post">
+						<form action="./LoginServlet" method="post">
 							<p>・ニックネーム:</p>
 							<input type="text" name="nickName" placeholder=" 例）user1234">
 							<p class="errorMsg"></p>

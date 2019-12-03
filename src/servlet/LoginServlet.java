@@ -21,7 +21,6 @@ public class LoginServlet extends HttpServlet {
 		dispatcher.forward(request, response);
 	}
 
-
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		String nickName = request.getParameter("nickName");
 		String password = request.getParameter("password");
